@@ -8,15 +8,16 @@ export default function Hero() {
   return (
     <>
     
-      <section className="flex flex-col justify-center px-5 pt-32 md:flex-row bg-dark">
-        <div className="flex flex-col md:w-1/2 md:py-32">
-          <h1 className="text-5xl font-bold md:text-6xl color-primary">
-            <span className="color-secondary">Hi,</span>
-            <br /> I'm Praveen PR
-            <p className="text-2xl">I'm a MERN-stack developer</p>
-          </h1>
-
-          <div className="flex mt-4 space-x-6">
+      <section className="flex flex-col justify-center h-screen px-5 pt-5 md:flex-row bg-dark">
+        <div className="flex flex-col justify-center w-full px-5 md:items-center md:w-1/2 md:px-0 " >
+          <div className="flex flex-col">
+            
+            <h1 className="text-5xl font-bold md:text-7xl color-primary ">
+              <span className="color-secondary">Hi,</span>
+              <br /> I'm Praveen PR
+              <p className="text-2xl">I'm a MERN-stack developer</p>
+            </h1>
+          <div className="flex pt-4 space-x-5">
             <a href="#" className="text-3xl hover:text-blue-900">
               <TbBrandGithubFilled size={40} />
             </a>
@@ -27,9 +28,15 @@ export default function Hero() {
               <SiLeetcode size={40} />
             </a>
           </div>
-        </div>
+          </div>
 
-        <img className="pt-8 md:w-1/3 md:py-0" src={HeroImg} alt="Hero Image" />
+        </div>
+        <div className="flex items-center justify-center w-full pt-10 md:w-1/2 md:pt-0" >
+          <div className="flex items-center justify-center md:w-3/4">
+            
+        <img className="" src={HeroImg} alt="Hero Image" />
+          </div>
+        </div>
       </section>
     </>
   );
