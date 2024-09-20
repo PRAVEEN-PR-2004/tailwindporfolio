@@ -7,13 +7,13 @@ import { SiLeetcode } from "react-icons/si";
 export default function Hero() {
   return (
     <>
-    
+    <br/>
       <section className="flex flex-col justify-center h-screen px-5 pt-5 md:flex-row bg-dark">
-        <div className="flex flex-col justify-center w-full px-5 md:items-center md:w-1/2 md:px-0 " >
+        <div className="flex flex-col justify-center w-full px-4 md:items-center md:w-1/2 md:px-0 " >
           <div className="flex flex-col">
             
-            <h1 className="text-5xl font-bold md:text-7xl color-primary ">
-              <span className="color-secondary">Hi,</span>
+            <h1 className="text-4xl font-bold md:text-7xl color-primary ">
+              <span className="text-5xl color-secondary md:text-7xl">Hi,</span>
               <br /> I'm Praveen PR
               <p className="text-2xl">I'm a MERN-stack developer</p>
             </h1>

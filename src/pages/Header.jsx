@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <>
       <header className="fixed top-0 left-0 flex justify-between w-full px-5 py-2 bg-white md:shadow-md ">
-        <a href="#" className="font-bold text-black color-primary">
+        <a href="#" className="font-bold text-black  color-primary">
           PORTFOLIO
         </a>
         <nav className="hidden md:block">
