@@ -2,6 +2,7 @@ import HeroImg from "../assets/tailwindimg2.png";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
+import Skills from "../components/Skills";
 
 
 export default function Hero() {
@@ -38,6 +39,7 @@ export default function Hero() {
           </div>
         </div>
       </section>
+      <Skills/>
     </>
   );
 }
