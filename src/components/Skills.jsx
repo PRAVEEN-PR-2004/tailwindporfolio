@@ -1,78 +1,34 @@
 import React from 'react';
 
-const CircularProgress = ({ percentage, skillName }) => {
-  const radius = 45;
-  const circumference = 2 * Math.PI * radius;
-  const strokeDashoffset = circumference - (percentage / 100) * circumference;
-
-  return (
-    <div className="flex flex-col items-center m-4">
-      <h3 className="mb-2 text-lg font-medium text-white">{skillName}</h3>
-      <svg
-        className="w-32 h-32"
-        viewBox="0 0 100 100"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="50"
-          cy="50"
-          r="45"
-          stroke="#e5e7eb"
-          strokeWidth="8"
-          fill="none"
-        />
-        <circle
-          cx="50"
-          cy="50"
-          r="45"
-          stroke="#6366f1"
-          strokeWidth="8"
-          fill="none"
-          strokeDasharray={circumference}
-          strokeDashoffset={strokeDashoffset}
-          strokeLinecap="round"
-          transform="rotate(-90 50 50)"
-        />
-        <text
-          x="50%"
-          y="50%"
-          dominantBaseline="middle"
-          textAnchor="middle"
-          className="text-xl font-bold text-black fill-current"
-        >
-          {percentage}%
-        </text>
-      </svg>
-    </div>
-  );
-};
+const skills = [
+  { name: 'PYTHON', percentage: '75%', color: 'bg-lime-500' },
+  { name: 'REACT', percentage: '65%', color: 'bg-purple-500' },
+  { name: 'NEXTJS', percentage: '60%', color: 'bg-cyan-400' },
+  { name: 'TAILWIND-CSS', percentage: '50%', color: 'bg-sky-300' },
+  { name: 'NODEJS', percentage: '35%', color: 'bg-pink-300' },
+  { name: 'EXPRESS', percentage: '30%', color: 'bg-green-700' }
+];
 
 const Skills = () => {
-    const skills = [
-      { name: 'React', percentage: 85 },
-      { name: 'JavaScript', percentage: 90 },
-      { name: 'CSS', percentage: 80 },
-      { name: 'Tailwind CSS', percentage: 75 },
-      { name: 'Java', percentage: 70 },
-      { name: 'MySQL', percentage: 65 },
-      { name: 'Node.js', percentage: 60 }
-    ];
-  
-    return (
-      <div className="flex flex-wrap items-center justify-center w-4/5 min-h-screen mx-auto bg-slate-50">
-        {skills.map((skill) => (
-          <div
-            key={skill.name}
-            className="flex justify-center w-full p-2 sm:w-1/2 md:w-1/4 lg:w-1/5"
-          >
-            <CircularProgress skillName={skill.name} percentage={skill.percentage} />
+  return (
+    <div className="flex items-center justify-center w-full h-screen bg-primary">
+      <div className="w-2/3 mx-auto space-y-4 md:w-1/3">
+      <h1 className="text-lg font-semibold text-center text-gray-900 ">SKILLS</h1>
+      <div className="w-16 h-1 mx-auto mb-6 bg-gray-400 rounded"></div>
+        {skills.map((skill, index) => (
+          <div key={index}>
+            <p className="pb-5 text-sm font-bold md:text-lg black-color">{skill.name}</p>
+            <div className="w-full pb-5 bg-gray-800 rounded md:h-9 h-7">
+              <div
+                className={`${skill.color} md:h-9 rounded h-7`}
+                style={{ width: skill.percentage }}
+              ></div>
+            </div>
           </div>
         ))}
       </div>
-    );
-  };
-  
-  
-  
+    </div>
+  );
+};
 
 export default Skills;
