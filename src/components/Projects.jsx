@@ -64,7 +64,7 @@ const Projects = () => {
     <div className="flex flex-col items-center justify-center w-full gap-6 p-6 bg-gray-100 bg-primary">
          <h1 className="text-lg font-semibold text-center text-gray-900 ">MY PROJECTS</h1>
          <div className="w-16 h-1 mx-auto mb-6 bg-gray-400 rounded"></div>
-    <div className='flex flex-wrap w-full md:w-1/2 gap-11'>
+    <div className='flex flex-wrap justify-center w-full md:w-1/2 gap-11'>
       {projects.map((project, index) => (
         <div
           key={index}
