@@ -11,7 +11,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="flex items-center justify-center w-full h-screen bg-primary">
+    <div className="flex items-center justify-center w-full h-screen bg-gray-100">
       <div className="w-2/3 mx-auto space-y-4 md:w-1/3">
       <h1 className="text-lg font-semibold text-center text-gray-900 ">SKILLS</h1>
       <div className="w-16 h-1 mx-auto mb-6 bg-gray-400 rounded"></div>
