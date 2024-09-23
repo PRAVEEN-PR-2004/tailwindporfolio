@@ -1,51 +1,6 @@
 import React from 'react';
-
-const projects = [
-  {
-    title: 'Project 1',
-    description: 'A short description of Project 1. This project showcases React and Tailwind CSS integration.',
-    image: 'https://via.placeholder.com/300x200', // Replace with your project image URL
-    liveDemo: '#', // Replace with the live demo URL
-    sourceCode: '#', // Replace with the source code URL
-  },
-  {
-    title: 'Project 2',
-    description: 'A short description of Project 2. This project highlights full-stack development with Node.js.',
-    image: 'https://via.placeholder.com/300x200', // Replace with your project image URL
-    liveDemo: '#',
-    sourceCode: '#',
-  },
-  {
-    title: 'Project 1',
-    description: 'A short description of Project 1. This project showcases React and Tailwind CSS integration.',
-    image: 'https://via.placeholder.com/300x200', // Replace with your project image URL
-    liveDemo: '#', // Replace with the live demo URL
-    sourceCode: '#', // Replace with the source code URL
-  },
-  {
-    title: 'Project 2',
-    description: 'A short description of Project 2. This project highlights full-stack development with Node.js.',
-    image: 'https://via.placeholder.com/300x200', // Replace with your project image URL
-    liveDemo: '#',
-    sourceCode: '#',
-  },
-  {
-    title: 'Project 1',
-    description: 'A short description of Project 1. This project showcases React and Tailwind CSS integration.',
-    image: 'https://via.placeholder.com/300x200', // Replace with your project image URL
-    liveDemo: '#', // Replace with the live demo URL
-    sourceCode: '#', // Replace with the source code URL
-  },
-  {
-    title: 'Project 2',
-    description: 'A short description of Project 2. This project highlights full-stack development with Node.js.',
-    image: 'https://via.placeholder.com/300x200', // Replace with your project image URL
-    liveDemo: '#',
-    sourceCode: '#',
-  },
-  // Add more projects as needed...
-];
-
+import ProjectData from './ProjectData'; // Make sure to adjust the import path based on your file structure
+import { Fade } from "react-awesome-reveal";
 const Projects = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full gap-6 p-6 bg-primary">
@@ -55,14 +10,17 @@ const Projects = () => {
       {/* Centered Grid Layout */}
       <div className='flex w-full'>
         <div className='grid grid-cols-1 gap-6 mx-auto md:grid-cols-2 md:gap-10'>
-          {projects.map((project, index) => (
+          {/* <Fade duration={2000} triggerOnce> */}
+          {ProjectData.map((project, index) => (
+              
+            
             <div
               key={index}
               className="max-w-sm overflow-hidden bg-white rounded-lg shadow-lg"
             >
               {/* Project Image */}
               <img
-                src={project.image}
+                src={project.imgsrc}
                 alt={project.title}
                 className="object-cover w-full h-48"
               />
@@ -70,30 +28,35 @@ const Projects = () => {
               {/* Project Info */}
               <div className="p-4">
                 <h3 className="mb-2 text-xl font-semibold">{project.title}</h3>
-                <p className="mb-4 text-gray-700">{project.description}</p>
+                <p className="mb-4 text-gray-700">{project.text}</p>
 
                 {/* Buttons */}
                 <div className="flex justify-between">
-                  <a
-                    href={project.liveDemo}
-                    className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View
-                  </a>
-                  <a
-                    href={project.sourceCode}
-                    className="px-4 py-2 text-white bg-gray-800 rounded hover:bg-gray-900"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Source Code
-                  </a>
+                  {project.view && (
+                    <a
+                      href={project.view}
+                      className="px-4 py-2 text-white rounded btn-secondary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View
+                    </a>
+                  )}
+                  {project.source && (
+                    <a
+                      href={project.source}
+                      className="px-4 py-2 text-white rounded btn-secondary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Source Code
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
           ))}
+          {/* </Fade> */}
         </div>
       </div>
     </div>

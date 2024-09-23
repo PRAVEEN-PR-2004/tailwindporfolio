@@ -25,3 +25,11 @@
 {
   color: rgb(57, 52, 52);
 }
+.btn-primary
+{
+  background-color: #312e81;
+}
+.btn-secondary
+{
+  background-color: #fbbf24;
+}
