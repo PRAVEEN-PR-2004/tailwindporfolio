@@ -9,11 +9,12 @@ import About from "./About";
 const Hero = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center h-screen px-4 ">
+      <div className="flex flex-col items-center justify-center min-h-screen px-4">
         <h1 className="mb-6 text-4xl font-bold text-center text-white md:mb-9 md:text-7xl">
-          Hello,<br></br> I'm PRAVEEN PR
+          Hello,
+          <br /> I'm PRAVEEN PR
         </h1>
-        <p className="items-center max-w-2xl mb-8 text-sm text-center text-gray-300 md:text-xl">
+        <p className="max-w-2xl mb-8 text-sm text-center text-gray-300 md:text-xl">
           A dedicated and enthusiastic computer science student actively working
           towards a bachelor's degree. Beyond technical prowess, I bring a
           multifaceted approach to my work with a penchant for project
@@ -36,8 +37,9 @@ const Hero = () => {
             <SiLeetcode size={40} />
           </a>
         </div>
+        <ParticlesBg type="circle" bg={true} />
       </div>
-      <ParticlesBg type="circle" bg={true} />
+
       {/* <About/>
      <Skills/>
      <Projects/>
