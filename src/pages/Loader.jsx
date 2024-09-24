@@ -11,7 +11,7 @@ const Loader = () => {
         alignItems: "center",
       }}
     >
-      <ClimbingBoxLoader color="#a8e5ab" size={30} />
+      <ClimbingBoxLoader color="#a8e5ab" size={25} />
     </div>
   );
 };
