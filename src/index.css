@@ -1,35 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.bg-primary
-{
+.bg-primary {
   background-color: #f9f9f9;
 }
 .mobile-menu {
-  @apply  absolute left-0 flex items-center justify-center w-full h-auto bg-white top-10;
+  @apply absolute left-0 flex items-center justify-center w-full h-auto bg-white top-10;
 }
 
-.bg-dark
-{
+.bg-dark {
   background-color: #f9f9f9;
 }
-.color-primary
-{
+.color-primary {
   color: #312e81;
 }
-.color-secondary
-{
-  color:#fbbf24;
+.color-secondary {
+  color: #fbbf24;
 }
-.black-color
-{
+.black-color {
   color: rgb(57, 52, 52);
 }
-.btn-primary
-{
+.btn-primary {
   background-color: #312e81;
 }
-.btn-secondary
-{
-  background-color: #fbbf24;
+.btn-secondary {
+  background-color: #9a9ae2;
+}
+.btn-color {
+  color: white;
 }
