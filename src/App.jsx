@@ -14,7 +14,7 @@ function App() {
     // Timer for 4 seconds to show the loading screen
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000); // 4000 ms = 4 seconds
+    }, 4000); // 4000 ms = 4 seconds
 
     // Cleanup the timer when the component unmounts
     return () => clearTimeout(timer);
