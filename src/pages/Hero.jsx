@@ -10,7 +10,7 @@ import About from "./About";
 const Hero = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-[80vh] md:min-h-screen px-4">
+      <div className="flex flex-col items-center justify-center min-h-[90vh] md:min-h-screen px-4">
         <h1 className="mb-6 text-4xl font-bold text-center text-white md:mb-9 md:text-7xl">
           Hello,
           <br /> I'm PRAVEEN PR
