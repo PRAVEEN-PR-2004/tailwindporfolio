@@ -37,8 +37,8 @@ const Hero = () => {
             <SiLeetcode size={40} />
           </a>
         </div>
-        <ParticlesBg type="circle" bg={true} />
       </div>
+      <ParticlesBg type="circle" bg={true} />
 
       <About />
       <Skills />
