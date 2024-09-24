@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 export const Navlayout = () => {
   return (
     <>
-      {/* <Navbar/> */}
+      <Navbar />
       <Outlet />
     </>
   );
