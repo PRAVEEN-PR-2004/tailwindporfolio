@@ -1,6 +1,6 @@
 import React from "react";
 
-import { DotLoader } from "react-spinners";
+import { ClimbingBoxLoader } from "react-spinners";
 const Loader = () => {
   return (
     <div
@@ -11,12 +11,7 @@ const Loader = () => {
         alignItems: "center",
       }}
     >
-      <DotLoader
-        cssOverride={{}}
-        color="#13f54f"
-        size={80}
-        speedMultiplier={1}
-      />
+      <ClimbingBoxLoader color="#a8e5ab" size={30} />
     </div>
   );
 };
