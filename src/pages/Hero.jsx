@@ -40,10 +40,10 @@ const Hero = () => {
         <ParticlesBg type="circle" bg={true} />
       </div>
 
-      {/* <About/>
-     <Skills/>
-     <Projects/>
-     <Footer/> */}
+      <About />
+      <Skills />
+      <Projects />
+      <Footer />
     </>
   );
 };
