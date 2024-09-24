@@ -6,10 +6,11 @@ import Skills from "../components/Skills";
 import Footer from "../components/Footer";
 import Projects from "../components/Projects";
 import About from "./About";
+
 const Hero = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-screen px-4">
+      <div className="flex flex-col items-center justify-center min-h-screen px-4 mb-0">
         <h1 className="mb-6 text-4xl font-bold text-center text-white md:mb-9 md:text-7xl">
           Hello,
           <br /> I'm PRAVEEN PR
@@ -38,7 +39,17 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <ParticlesBg type="circle" bg={true} />
+      <ParticlesBg
+        type="circle"
+        bg={true}
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+        }}
+      />
 
       <About />
       <Skills />
