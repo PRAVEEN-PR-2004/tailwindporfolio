@@ -15,7 +15,7 @@ const Hero = () => {
           Hello,
           <br /> I'm PRAVEEN PR
         </h1>
-        <p className="max-w-2xl mb-8 text-sm text-center text-gray-300 md:text-xl">
+        <p className="max-w-2xl mb-8 text-sm text-center text-white md:text-xl">
           A dedicated and enthusiastic computer science student actively working
           towards a bachelor's degree. Beyond technical prowess, I bring a
           multifaceted approach to my work with a penchant for project
