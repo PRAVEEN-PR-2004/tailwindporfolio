@@ -6,7 +6,8 @@ import ParticlesBg from "particles-bg";
 const Hero = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-[95vh] md:min-h-screen px-4">
+      {/* Wrap the main content in a relative div and give it a higher z-index */}
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-[95vh] md:min-h-screen px-4">
         <h1 className="mb-6 text-4xl font-bold text-center text-white md:mb-9 md:text-7xl">
           Hello,
           <br /> I'm PRAVEEN PR
@@ -36,11 +37,13 @@ const Hero = () => {
         </div>
       </div>
 
+      {/* Particles background with a lower z-index */}
       <ParticlesBg
         type="circle"
-        bg={true}
-        style={{
+        bg={{
+          zIndex: 0, // Lower z-index so the particles stay behind the content
           position: "absolute",
+          background: "black", // Set the background to black
           top: 0,
           left: 0,
           width: "100%",

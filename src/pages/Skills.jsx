@@ -1,12 +1,13 @@
 import React from "react";
 
 const skills = [
-  { name: "PYTHON", percentage: "75%", color: "bg-lime-500" },
-  { name: "REACT", percentage: "65%", color: "bg-purple-500" },
-  { name: "NEXTJS", percentage: "60%", color: "bg-cyan-400" },
-  { name: "TAILWIND-CSS", percentage: "50%", color: "bg-sky-300" },
-  { name: "NODEJS", percentage: "35%", color: "bg-pink-300" },
-  { name: "EXPRESS", percentage: "30%", color: "bg-green-700" },
+  { name: "JAVA", percentage: "75%", color: "btn-primary" },
+  { name: "REACT", percentage: "55%", color: "btn-primary" },
+  { name: "BOOTSTRAP", percentage: "80%", color: "btn-primary" },
+  { name: "TAILWIND-CSS", percentage: "50%", color: "btn-primary" },
+  { name: "NODEJS", percentage: "30%", color: "btn-primary" },
+  { name: "EXPRESS", percentage: "35%", color: "btn-primary" },
+  { name: "MONGODB", percentage: "35%", color: "btn-primary" },
 ];
 
 const Skills = () => {

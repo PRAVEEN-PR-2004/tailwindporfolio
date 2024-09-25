@@ -27,15 +27,19 @@ const Projects = () => {
 
               {/* Project Info */}
               <div className="p-4">
-                <h3 className="mb-2 text-xl font-semibold">{project.title}</h3>
-                <p className="mb-4 text-gray-700">{project.text}</p>
+                <h3 className="mb-2 text-xl font-semibold text-center">
+                  {project.title}
+                </h3>
+                <p className="mb-4 text-sm text-center text-gray-700">
+                  {project.text}
+                </p>
 
                 {/* Buttons */}
-                <div className="flex justify-between">
+                <div className="flex justify-between pt-5">
                   {project.view && (
                     <a
                       href={project.view}
-                      className="px-4 py-2 text-white rounded btn-secondary"
+                      className="px-4 py-2 text-white rounded btn-primary "
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -45,11 +49,11 @@ const Projects = () => {
                   {project.source && (
                     <a
                       href={project.source}
-                      className="px-4 py-2 text-white rounded btn-secondary"
+                      className="px-4 py-2 text-white rounded btn-primary "
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Source Code
+                      Code
                     </a>
                   )}
                 </div>
