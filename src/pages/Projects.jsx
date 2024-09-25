@@ -1,19 +1,19 @@
-import React from 'react';
-import ProjectData from './ProjectData'; // Make sure to adjust the import path based on your file structure
-import { Fade } from "react-awesome-reveal";
+import React from "react";
+import ProjectData from "./ProjectData"; // Make sure to adjust the import path based on your file structure
+
 const Projects = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full gap-6 p-6 bg-primary">
-      <h1 className="text-lg font-semibold text-center text-gray-900">MY PROJECTS</h1>
+    <div className="flex flex-col items-center justify-center w-full gap-6 p-6 pt-24 bg-primary">
+      <h1 className="text-lg font-semibold text-center text-gray-900">
+        MY PROJECTS
+      </h1>
       <div className="w-16 h-1 mx-auto mb-6 bg-gray-400 rounded"></div>
-      
+
       {/* Centered Grid Layout */}
-      <div className='flex w-full'>
-        <div className='grid grid-cols-1 gap-6 mx-auto md:grid-cols-2 md:gap-10'>
+      <div className="flex w-full">
+        <div className="grid grid-cols-1 gap-6 mx-auto md:grid-cols-2 md:gap-10">
           {/* <Fade duration={2000} triggerOnce> */}
           {ProjectData.map((project, index) => (
-              
-            
             <div
               key={index}
               className="max-w-sm overflow-hidden bg-white rounded-lg shadow-lg"

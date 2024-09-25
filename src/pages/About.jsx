@@ -3,7 +3,7 @@ import myimg from "../assets/portfoliome.jpg";
 const About = () => {
   return (
     <div className="flex items-center justify-center min-h-screen p-4 bg-gray-100">
-      <div className="flex flex-col items-center max-w-4xl p-8 bg-white rounded-lg shadow-md md:flex-row">
+      <div className="flex flex-col items-center p-8 bg-white rounded-lg shadow-md md:max-w-6xl md:p-28 md:flex-row">
         {/* Profile Image */}
         <div className="w-full mb-6 md:w-1/3 md:mb-0">
           <img

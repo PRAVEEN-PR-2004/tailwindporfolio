@@ -1,40 +1,46 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./App.css";
 
 import Hero from "./pages/Hero";
-import About from "./pages/About";
-import { Navlayout } from "./layout/Navlayout";
+import Navbar from "./pages/Navbar";
 import Loader from "./pages/Loader";
+import About from "./pages/About";
+import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
+import Footer from "./pages/Footer";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true); // State to manage the loading screen
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Timer for 4 seconds to show the loading screen
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 4000); // 4000 ms = 4 seconds
-
-    // Cleanup the timer when the component unmounts
+    }, 4000);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <>
       {isLoading ? (
-        // Display the loading page for 4 seconds
         <Loader />
       ) : (
-        // Render the app's main content after 4 seconds
-        <BrowserRouter>
-          <Routes>
-            <Route element={<Navlayout />}>
-              <Route path="/" element={<Hero />} />
-              <Route path="/about" element={<About />} />
-            </Route>
-          </Routes>
-        </BrowserRouter>
+        <>
+          <Navbar />
+          <section id="hero">
+            <Hero />
+          </section>
+          <section id="about">
+            <About />
+          </section>
+          <section id="skills">
+            <Skills />
+          </section>
+          <section id="projects">
+            <Projects />
+          </section>
+          <Footer />
+        </>
       )}
     </>
   );

@@ -2,10 +2,6 @@ import { TbBrandGithubFilled } from "react-icons/tb";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import ParticlesBg from "particles-bg";
-import Skills from "../components/Skills";
-import Footer from "../components/Footer";
-import Projects from "../components/Projects";
-import About from "./About";
 
 const Hero = () => {
   return (
@@ -51,11 +47,6 @@ const Hero = () => {
           height: "100%",
         }}
       />
-
-      <About />
-      <Skills />
-      <Projects />
-      <Footer />
     </>
   );
 };
