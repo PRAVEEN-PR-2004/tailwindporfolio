@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Slide } from "react-awesome-reveal";
 const skills = [
   { name: "JAVA", percentage: "75%", color: "btn-primary" },
   { name: "REACT", percentage: "55%", color: "btn-primary" },
@@ -18,19 +18,21 @@ const Skills = () => {
           SKILLS
         </h1>
         <div className="w-16 h-1 mx-auto mb-6 bg-gray-400 rounded"></div>
-        {skills.map((skill, index) => (
-          <div key={index}>
-            <p className="pb-5 text-sm font-bold md:text-lg black-color">
-              {skill.name}
-            </p>
-            <div className="w-full pb-5 bg-gray-800 rounded md:h-9 h-7">
-              <div
-                className={`${skill.color} md:h-9 rounded h-7`}
-                style={{ width: skill.percentage }}
-              ></div>
+        <Slide duration={1000} triggerOnce>
+          {skills.map((skill, index) => (
+            <div key={index}>
+              <p className="pb-5 text-sm font-bold md:text-lg black-color">
+                {skill.name}
+              </p>
+              <div className="w-full pb-5 bg-gray-800 rounded md:h-9 h-7">
+                <div
+                  className={`${skill.color} md:h-9 rounded h-7`}
+                  style={{ width: skill.percentage }}
+                ></div>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </Slide>
       </div>
     </div>
   );

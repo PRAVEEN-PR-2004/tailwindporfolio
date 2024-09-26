@@ -5,8 +5,8 @@ import { Slide } from "react-awesome-reveal";
 
 const About = () => {
   return (
-    <Slide duration={1000} triggerOnce>
-      <div className="flex items-center justify-center min-h-screen p-4 bg-white">
+    <div className="flex items-center justify-center min-h-screen p-4 bg-white">
+      <Slide duration={1000} triggerOnce>
         <div className="flex flex-col items-center p-8 bg-gray-100 rounded-lg shadow-md md:max-w-6xl md:p-20 md:flex-row">
           {/* Profile Image */}
           <div className="w-full mb-6 md:w-1/3 md:mb-0">
@@ -70,8 +70,8 @@ const About = () => {
             </button>
           </div>
         </div>
-      </div>
-    </Slide>
+      </Slide>
+    </div>
   );
 };
 
