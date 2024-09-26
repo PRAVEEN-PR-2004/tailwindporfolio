@@ -23,9 +23,12 @@ const Hero = () => {
           {/* GitHub Icon */}
           <a
             href="https://github.com/PRAVEEN-PR-2004"
-            className="text-3xl font-extrabold text-blue-900"
+            className="text-3xl font-extrabold text-blue-600"
           >
-            <TbBrandGithubFilled size={40} href="" />
+            <TbBrandGithubFilled
+              size={40}
+              className="transition-transform duration-300 hover:scale-110 hover:text-blue-900"
+            />
           </a>
 
           {/* LinkedIn Icon */}
@@ -33,7 +36,10 @@ const Hero = () => {
             href="https://www.linkedin.com/in/praveen-p-r-15-09-2004-ttp/"
             className="text-3xl font-extrabold text-blue-500"
           >
-            <FaLinkedinIn size={40} />
+            <FaLinkedinIn
+              size={40}
+              className="transition-transform duration-300 hover:scale-110 hover:text-blue-700"
+            />
           </a>
 
           {/* LeetCode Icon */}
@@ -41,7 +47,10 @@ const Hero = () => {
             href="https://leetcode.com/u/praveen2004ttp/"
             className="text-3xl font-extrabold text-orange-600"
           >
-            <SiLeetcode size={40} />
+            <SiLeetcode
+              size={40}
+              className="transition-transform duration-300 hover:scale-110 hover:text-orange-700"
+            />
           </a>
         </div>
       </div>
