@@ -8,9 +8,9 @@ const Projects = () => {
       <h1 className="text-lg font-semibold text-center text-gray-900">
         MY PROJECTS
       </h1>
-      <Slide duration={2000} triggerOnce>
-        <div className="w-16 h-1 mx-auto mb-6 bg-gray-400 rounded"></div>
-        {/* Centered Grid Layout */}
+      <div className="w-16 h-1 mx-auto mb-6 bg-gray-400 rounded"></div>
+      {/* Centered Grid Layout */}
+      <Slide duration={1000} triggerOnce>
         <div className="flex w-full">
           <div className="grid grid-cols-1 gap-6 mx-auto md:grid-cols-2 md:gap-10">
             {/* <Fade duration={2000} triggerOnce> */}

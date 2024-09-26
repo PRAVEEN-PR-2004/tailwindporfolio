@@ -13,10 +13,10 @@ const Hero = () => {
           <br /> I'm PRAVEEN PR
         </h1>
         <p className="max-w-2xl mb-8 text-sm text-center text-white md:text-xl">
-          A dedicated and enthusiastic computer science student actively working
-          towards a bachelor's degree. Beyond technical prowess, I bring a
-          multifaceted approach to my work with a penchant for project
-          management.
+          A driven computer science student pursuing a bachelor's degree,
+          skilled in React.js frontend development, proficient in Java
+          programming, with experience in database management, and a
+          foundational understanding of backend development.
         </p>
 
         <div className="flex space-x-6">
