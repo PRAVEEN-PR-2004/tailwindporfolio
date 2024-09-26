@@ -21,17 +21,26 @@ const Hero = () => {
 
         <div className="flex space-x-6">
           {/* GitHub Icon */}
-          <a href="#" className="text-3xl hover:text-blue-900">
-            <TbBrandGithubFilled size={40} />
+          <a
+            href="https://github.com/PRAVEEN-PR-2004"
+            className="text-3xl font-extrabold text-blue-900"
+          >
+            <TbBrandGithubFilled size={40} href="" />
           </a>
 
           {/* LinkedIn Icon */}
-          <a href="#" className="text-3xl hover:text-blue-500">
+          <a
+            href="https://www.linkedin.com/in/praveen-p-r-15-09-2004-ttp/"
+            className="text-3xl font-extrabold text-blue-500"
+          >
             <FaLinkedinIn size={40} />
           </a>
 
           {/* LeetCode Icon */}
-          <a href="#" className="text-3xl hover:text-orange-600">
+          <a
+            href="https://leetcode.com/u/praveen2004ttp/"
+            className="text-3xl font-extrabold text-orange-600"
+          >
             <SiLeetcode size={40} />
           </a>
         </div>
