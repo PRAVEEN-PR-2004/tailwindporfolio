@@ -4,7 +4,7 @@ import { ClimbingBoxLoader } from "react-spinners";
 const Loader = () => {
   return (
     <div
-      className="items-center justify-center w-screen h-screen bg-slate-700"
+      className="items-center justify-center w-screen h-screen bg-slate-950"
       style={{
         display: "flex",
         justifyContent: "center",
