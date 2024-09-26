@@ -36,10 +36,10 @@ const About = () => {
               growth, both as a developer and an individual, and strive to
               enhance my skills and knowledge every day.
             </p>
-            <p className="pt-4 text-lg font-semibold leading-relaxed text-gray-600">
+            <p className="pt-4 font-semibold leading-relaxed text-gray-600">
               CONTACT: 9597412160
             </p>
-            <p className="pt-1 text-lg font-semibold leading-relaxed text-gray-600">
+            <p className="pt-1 font-semibold leading-relaxed text-gray-600">
               MAIL: praveen2004ttp@gmail.com
             </p>
             <p className="pb-10 mt-4 leading-relaxed text-gray-600">
