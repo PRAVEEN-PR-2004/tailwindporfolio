@@ -9,14 +9,14 @@ const Hero = () => {
       {/* Wrap the main content in a relative div and give it a higher z-index */}
       <div className="relative z-10 flex flex-col items-center justify-center min-h-[95vh] md:min-h-screen px-4">
         <h1 className="mb-6 text-4xl font-bold text-center text-white md:mb-9 md:text-7xl">
-          <span>👋Hello,</span>
-          <br /> I'm PRABHA M
+          Hello,
+          <br /> I'm PRAVEEN PR
         </h1>
         <p className="max-w-2xl mb-8 text-sm text-center text-white md:text-xl">
-          A passionate AI & Data Science student at Saranathan College of
-          Engineering, skilled in Python and Machine Learning, proficient in
-          Excel and Power BI, with a strong interest in leveraging technology to
-          solve real-world problems.
+          A driven computer science student pursuing a bachelor's degree,
+          skilled in React.js frontend development, proficient in Java
+          programming, with experience in database management, and a
+          foundational understanding of backend development.
         </p>
 
         <div className="flex space-x-6">

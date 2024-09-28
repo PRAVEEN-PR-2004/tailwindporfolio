@@ -21,22 +21,26 @@ const About = () => {
           <div className="w-full md:w-2/3 md:pl-8">
             <h1 className="mb-4 text-3xl font-bold text-gray-800">About Me</h1>
             <p className="leading-relaxed text-gray-600">
-              Hi! I'm Prabha M, a student at Saranathan College of Engineering,
-              pursuing a degree in AI & Data Science. I have a strong foundation
-              in Python and machine learning, with additional expertise in Excel
-              and Power BI. I am passionate about exploring new technologies and
-              applying my knowledge to solve real-world problems.
+              Hi! I'm Praveen, a passionate frontend developer & freelancer. I
+              love frontend development and Java programming, and I enjoy
+              crafting captivating digital experiences with a focus on clean
+              design, seamless functionality, and user-centric development. With
+              expertise in React, Tailwind CSS, and various other technologies,
+              I also know data structures and algorithms (DSA) in Java and am a
+              MERN stack developer, where I leverage MongoDB, Express.js, React,
+              and Node.js to build dynamic web applications.
             </p>
             <p className="mt-4 leading-relaxed text-gray-600">
-              With a CGPA of 8.2, I am committed to continuous learning and
-              improvement. I am excited about leveraging my skills in AI and
-              data science to make a meaningful impact in the industry.
+              I have solved 170+ problems on LeetCode in Java and have completed
+              many projects related to web development. I believe in continuous
+              growth, both as a developer and an individual, and strive to
+              enhance my skills and knowledge every day.
             </p>
             <p className="pt-4 font-semibold leading-relaxed text-gray-600">
-              CONTACT: 9566696788
+              CONTACT: 9597412160
             </p>
             <p className="pt-1 font-semibold leading-relaxed text-gray-600">
-              MAIL: prabhamuruga2020@gmail.com
+              MAIL: praveen2004ttp@gmail.com
             </p>
             <p className="pb-10 mt-4 leading-relaxed text-gray-600">
               Let's create something amazing together!
@@ -45,10 +49,10 @@ const About = () => {
             {/* Download Resume Button */}
             <button
               type="submit"
-              class="flex gap-2 mx-auto shadow-md text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-sky-400 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
+              class="flex gap-2 mx-auto shadow-md text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-indigo-900 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
             >
               <a
-                href={resume} // Replace with your resu
+                href={resume} // Replace with your resume's file path
                 download
               >
                 Download Resume
