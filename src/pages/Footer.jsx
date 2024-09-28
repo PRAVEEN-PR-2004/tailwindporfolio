@@ -40,7 +40,7 @@ const Footer = () => {
         </a>
       </div>
       <p className="pb-3 text-xs font-light text-gray-500">
-        PROTFOLIO CREATED BY PRAVEEN
+        PROTFOLIO CREATED BY PRABHA
       </p>
     </div>
   );
